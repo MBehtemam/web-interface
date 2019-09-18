@@ -1,0 +1,63 @@
+.flex-wrapper {
+  display: flex;
+  height: 100vh;
+}
+.flex-wrapper a {
+  flex: 1;
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  transition: flex 0.4s;
+}
+.flex-wrapper a:hover {
+  flex: 3;
+}
+.flex-wrapper .one {
+  background-image: url(../images/nav-001.jpg);
+}
+.flex-wrapper .two {
+  background-image: url(../images/nav-002.jpg);
+}
+.flex-wrapper .three {
+  background-image: url(../images/nav-003.jpg);
+}
+.flex-wrapper .four {
+  background-image: url(../images/nav-004.jpg);
+}
+.overlay-inner {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  transition: background-color 0.4s;
+}
+.flex-wrapper a:hover .overlay-inner {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flex-wrapper .overlay-inner * {
+  visibility: hidden;
+  opacity: 0;
+  transform-style: preserve-3d;
+}
+.flex-wrapper .overlay-inner h2 {
+  transform: translate3d(0, -60px, 0);
+}
+.flex-wrapper .overlay-inner p {
+  transform: translate3d(0, 60px, 0);
+}
+.flex-wrapper a:hover .overlay-inner * {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: all 0.3s 0.3s;
+}

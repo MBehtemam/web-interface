@@ -1,0 +1,77 @@
+body {
+  font-family: "Titillium Web", sans-serif !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2f2e41;
+  overflow-x: hidden;
+  height: 100%;
+}
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  max-width: 1140px;
+  display: flex;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-success {
+  color: #01d28e;
+}
+/************************* NAV bar Section *************************/
+.navbar {
+  display: flex;
+  background-color: #000000;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+  height: 55px;
+}
+.navbar-nav {
+  display: flex;
+}
+.navbar-nav ul {
+  list-style: none;
+}
+.navbar-nav li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 1.5em;
+}
+
+.navbar-nav li.active a {
+  color: #00d28e;
+}
+.navbar-nav li a:hover {
+  color: #00d28e;
+  text-decoration: underline;
+}
+/*****************************************************************/
+
+/************ HERO Image Section *******************/
+#hero-image {
+  display: flex;
+  background-image: url("../images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  height: 90vh;
+  justify-content: center;
+}
+#hero-image container {
+  max-width: 1140px;
+}
+#hero-image .first-title {
+  font-weight: 700;
+  font-size: 6em;
+}
